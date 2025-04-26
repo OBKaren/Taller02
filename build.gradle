@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.14.1'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
+
+    // Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+    // Faker
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+
+    // Configuración
+    implementation 'org.apache.commons:commons-configuration2:2.9.0'
+    implementation 'commons-beanutils:commons-beanutils:1.9.4'
+
+    // Logging
+    implementation 'org.apache.logging.log4j:log4j-core:2.21.0'
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        showExceptions true
+        showCauses true
+        showStackTraces true
+        showStandardStreams true
+    }
+
+    // Pasar propiedades del sistema a los tests
+    systemProperties System.getProperties()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
