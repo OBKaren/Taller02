@@ -1,14 +1,24 @@
-# 🚀 Proyecto de Automatización Web: Todo.ly con Selenium + Java + Gradle
+# 🚀 Proyecto de Automatización Web con Selenium, Java y Gradle
 
-## 🌟 Descripción
-Proyecto de pruebas automatizadas para la aplicación Todo.ly implementando el patrón Page Object Model con:
-- **Selenium WebDriver 4.14.1**
-- **Java 17**
-- **Gradle 8.13**
-- **JUnit 5**
+Este proyecto implementa pruebas automatizadas para la aplicación Todo.ly utilizando Selenium WebDriver con Java y Gradle como gestor de dependencias.
 
-## 📦 Estructura del Proyecto
-selenium-todo-ly/
+## 📋 Requisitos Previos
+
+- Java JDK 17 o superior
+- Gradle 8.0+
+- Chrome/Firefox (según configuración)
+- Conexión a internet
+
+## 🛠️ Configuración
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [URL_DEL_REPOSITORIO]
+
+## Estructura del proyecto
+
+El proyecto sigue una estructura modular para facilitar la escalabilidad y el mantenimiento:
+
 📦 Taller02
 ┣ 📂 java
 ┃ ┣ 📂 pages
@@ -20,18 +30,5 @@ selenium-todo-ly/
 ┃ ┃ ┗ 📜 ConfigLoader.java
 ┣ 📜 build.gradle
 ┣ 📜 README.md
-┗ 📜 config.propertie
+┗ 📜 config.properties
 
-🔧 Tecnologías Utilizadas
-Selenium WebDriver 4.14.1 - Automatización web
-WebDriverManager 5.6.3 - Gestión automática de drivers
-JUnit 5 - Framework de testing
-Gradle - Gestión de dependencias y builds
-Log4j2 - Logging estructurado
-
-## Configuración inicial
-
-1. **Clonar el repositorio**:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_PROYECTO>
