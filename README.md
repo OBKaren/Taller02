@@ -1,24 +1,33 @@
-# Proyecto de Automatización con Selenium y Java
+# 🚀 Proyecto de Automatización Web: Todo.ly con Selenium + Java + Gradle
 
-Este proyecto es una suite de pruebas automatizadas desarrollada en **Java** utilizando **Selenium WebDriver** y **JUnit 5**. Está diseñado para automatizar pruebas funcionales de aplicaciones web.
+## 🌟 Descripción
+Proyecto de pruebas automatizadas para la aplicación Todo.ly implementando el patrón Page Object Model con:
+- **Selenium WebDriver 4.14.1**
+- **Java 17**
+- **Gradle 8.13**
+- **JUnit 5**
 
-## Tecnologías utilizadas
+## 📦 Estructura del Proyecto
+selenium-todo-ly/
+📦 Taller02
+┣ 📂 java
+┃ ┣ 📂 pages
+┃ ┃ ┣ 📜 BasePage.java
+┃ ┃ ┗ 📜 MainPage.java
+┃ ┣ 📂 tests
+┃ ┃ ┗ 📜 (Clases de pruebas)
+┃ ┗ 📂 utils
+┃ ┃ ┗ 📜 ConfigLoader.java
+┣ 📜 build.gradle
+┣ 📜 README.md
+┗ 📜 config.propertie
 
-- **Java**: Lenguaje de programación principal.
-- **Selenium WebDriver**: Herramienta para la automatización de navegadores.
-- **JUnit 5**: Framework para la ejecución de pruebas.
-- **Gradle**: Herramienta de construcción y gestión de dependencias.
-- **WebDriverManager**: Gestión automática de controladores de navegador.
-- **Log4j**: Registro de logs.
-- **JavaFaker**: Generación de datos aleatorios para pruebas.
-
-## Estructura del proyecto
-
-El proyecto sigue una estructura modular para facilitar la escalabilidad y el mantenimiento:
-
-- `java/pages`: Contiene las clases de las páginas (Page Object Model).
-- `java/tests`: Contiene las clases de pruebas.
-- `java/utils`: Contiene utilidades como cargadores de configuración.
+🔧 Tecnologías Utilizadas
+Selenium WebDriver 4.14.1 - Automatización web
+WebDriverManager 5.6.3 - Gestión automática de drivers
+JUnit 5 - Framework de testing
+Gradle - Gestión de dependencias y builds
+Log4j2 - Logging estructurado
 
 ## Configuración inicial
 
